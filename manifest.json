@@ -1,6 +1,6 @@
 {
-  "short_name": "Project BG",
-  "name": "Secret project",
+  "short_name": "ML_github_page",
+  "name": "Michele Lucini's github page",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "ml_logo.svg",
+      "purpose": "maskable any",
+      "sizes": "any"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#4F4A44",
+  "background_color": "#EFEAE4"
 }

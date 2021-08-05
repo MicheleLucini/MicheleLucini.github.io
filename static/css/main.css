@@ -1,0 +1,137 @@
+:root {
+  --bg-color: #efeae4;
+  --primary-color: #494848;
+}
+
+body {
+  margin: 0;
+  font-family: "Gotu";
+  color: #000001;
+  background-color: var(--bg-color);
+}
+
+/*****************/
+
+.page {
+  position: relative;
+  margin: 0;
+  display: grid;
+}
+
+/*****************/
+
+.nav {
+  display: grid;
+  height: 100px;
+  align-items: center;
+  justify-items: center;
+  outline: 1px solid #d4d1cf;
+}
+.nav svg {
+  height: 28px;
+  cursor: pointer;
+  width: auto;
+}
+.nav svg path {
+  fill: var(--primary-color);
+}
+
+.logo {
+  display: none;
+}
+.logo2 {
+  font-family: "Imbue";
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+/*****************/
+
+.content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: calc(100vh - 100px);
+}
+
+.vetro {
+  grid-column: 1;
+  grid-row: 1;
+
+  border-radius: 16px;
+  display: grid;
+  padding: 20px 0;
+  margin: 2rem 0 8rem;
+  grid-gap: 0px;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.separatore {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.portal {
+  display: grid;
+  padding: 20px 28px;
+  grid-gap: 4px;
+  color: inherit;
+  text-decoration: none;
+}
+.portal:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.portal h3 {
+  font-family: "MuseoModerno";
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: var(--primary-color);
+}
+.portal p {
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.porta {
+  grid-column: 1;
+  grid-row: 1;
+
+  height: 250px;
+  width: 200px;
+  border-radius: 50% 50% 0 0;
+  z-index: -1;
+  margin-left: -370px;
+  margin-top: 200px;
+
+  background-color: var(--primary-color);
+  background-image: linear-gradient(
+    0deg,
+    var(--primary-color) 10%,
+    var(--bg-color) 100%
+  );
+}
+
+/*****************/
+
+.footer {
+  display: grid;
+  padding: 60px 0;
+  align-items: center;
+  justify-items: center;
+  background-color: #f8f4f1;
+}
+
+.footer ion-icon {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
