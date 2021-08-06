@@ -64,11 +64,22 @@ body {
   margin: 2rem 0 8rem;
   grid-gap: 0px;
 
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.01);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+
+  animation-name: vetro-appare;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes vetro-appare {
+  from {
+  }
+  to {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
 }
 
 .separatore {
@@ -82,6 +93,13 @@ body {
   grid-gap: 4px;
   color: inherit;
   text-decoration: none;
+
+  opacity: 0;
+
+  animation-name: portal-appare;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
 }
 .portal:hover {
   background-color: rgba(255, 255, 255, 0.25);
@@ -101,6 +119,15 @@ body {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5rem;
+}
+
+@keyframes portal-appare {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .porta,
