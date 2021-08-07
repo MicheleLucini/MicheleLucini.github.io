@@ -12,7 +12,7 @@ body {
 
 /*****************/
 
-.page {
+#app {
   position: relative;
   margin: 0;
   display: grid;
@@ -43,6 +43,7 @@ body {
   font-family: "Imbue";
   font-weight: 400;
   font-size: 3rem;
+  color: var(--primary-color);
 }
 
 /*****************/
@@ -52,6 +53,7 @@ body {
   align-items: center;
   justify-items: center;
   min-height: calc(100vh - 100px);
+  overflow-x: hidden;
 }
 
 .vetro {
@@ -129,17 +131,13 @@ body {
 
 .porta,
 .stella {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: -1;
   transition: 100ms linear;
 }
 
 .porta {
-  grid-column: 1;
-  grid-row: 1;
-
-  z-index: -1;
-  margin-left: -370px;
-  margin-top: 280px;
-
   height: 250px;
   width: 200px;
   border-radius: 50% 50% 0 0;
@@ -153,20 +151,12 @@ body {
 }
 
 .stella {
-  grid-column: 1;
-  grid-row: 1;
-
-  z-index: -1;
-  margin-left: 380px;
-  margin-top: -550px;
-
   height: 120px;
   width: 180px;
 
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  /* overflow: hidden; */
 
   background-color: var(--primary-color);
   background-image: linear-gradient(
