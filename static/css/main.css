@@ -48,13 +48,16 @@ html {
   /* background-color: var(--greyLight-1);
   box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2); */
 }
-.nav svg {
-  height: 28px;
+.nav .logo svg {
+  height: 32px;
   cursor: pointer;
   width: auto;
 }
-.nav svg path {
-  fill: var(--primary);
+.nav .logo svg {
+  z-index: 3;
+}
+.nav .logo svg path {
+  fill: var(--primary-dark);
 }
 
 /*****************/
