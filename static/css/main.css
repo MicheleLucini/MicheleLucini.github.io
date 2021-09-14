@@ -48,16 +48,43 @@ html {
   /* background-color: var(--greyLight-1);
   box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2); */
 }
+.nav .logo {
+  display: grid;
+}
 .nav .logo svg {
-  height: 32px;
+  grid-column: 1;
+  grid-row: 1;
+  height: 40px;
   cursor: pointer;
   width: auto;
 }
-.nav .logo svg {
-  z-index: 3;
+.nav .logo svg:nth-child(1) {
+  z-index: 6;
+  transform: translateY(0px);
 }
-.nav .logo svg path {
-  fill: var(--primary-dark);
+.nav .logo svg:nth-child(1) path {
+  fill: white;
+}
+.nav .logo svg:nth-child(2) {
+  z-index: 5;
+  transform: translateY(5px);
+}
+.nav .logo svg:nth-child(2) path {
+  fill: #3050d4;
+}
+.nav .logo svg:nth-child(3) {
+  z-index: 4;
+  transform: translateY(10px);
+}
+.nav .logo svg:nth-child(3) path {
+  fill: #a3aedf;
+}
+.nav .logo svg:nth-child(4) {
+  z-index: 3;
+  transform: translateY(15px);
+}
+.nav .logo svg:nth-child(4) path {
+  fill: #d4d7e3;
 }
 
 /*****************/
