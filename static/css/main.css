@@ -1,8 +1,8 @@
 :root {
   --bg: #eaecfc;
-  --bg-footer: #D2D6F5;
+  --bg-footer: #d2d6f5;
 
-  --primary: #4937B5;
+  --primary: #4937b5;
   --secondary: #7c7fbc;
 
   --clock-hours: #bec8e4;
@@ -114,7 +114,7 @@ a {
   border-radius: 2rem;
   display: grid;
   padding: 2rem 1rem;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .container .btn {
