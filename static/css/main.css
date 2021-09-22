@@ -2,8 +2,10 @@
   --bg: #eaecfc;
   --bg-footer: #d2d6f5;
 
-  --primary: #4937b5;
-  --secondary: #7c7fbc;
+  --primary: #3050d4;
+  --secondary: #a3aedf;
+
+  --text: #607d8b;
 
   --clock-hours: #bec8e4;
   --clock-minutes: #9baacf;
@@ -29,7 +31,7 @@ html {
   overflow-y: scroll;
   background: var(--bg);
   color: var(--primary);
-  font-family: "Roboto";
+  font-family: "Open Sans";
 }
 @media screen and (min-width: 900px) {
   html {
@@ -79,14 +81,14 @@ a {
   transform: translateY(5px);
 }
 .nav .logo svg:nth-child(2) path {
-  fill: #3050d4;
+  fill: var(--primary);
 }
 .nav .logo svg:nth-child(3) {
   z-index: 4;
   transform: translateY(10px);
 }
 .nav .logo svg:nth-child(3) path {
-  fill: #a3aedf;
+  fill: var(--secondary);
 }
 .nav .logo svg:nth-child(4) {
   z-index: 3;
@@ -108,6 +110,11 @@ a {
   justify-content: center;
   grid-gap: 4rem;
   padding: 2rem 1rem;
+}
+@media screen and (min-width: 900px) {
+  .content {
+    grid-gap: 2rem;
+  }
 }
 
 .container {
@@ -147,8 +154,10 @@ a {
 /*  BUTTONS  */
 
 .btn {
+  display: grid;
+  grid-gap: 0.5rem;
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
@@ -164,16 +173,15 @@ a {
     inset -0.3rem -0.3rem 1.5rem var(--shadow-light) !important;
 }
 .btn h3 {
-  font-family: "MuseoModerno";
-  font-weight: 500;
+  font-family: "Gruppo";
+  font-weight: 900;
   letter-spacing: 0.1rem;
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
 }
 .btn p {
-  color: var(--secondary);
+  color: var(--text);
   font-size: 1.3rem;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
 }
 
 /*  CLOCK  */
